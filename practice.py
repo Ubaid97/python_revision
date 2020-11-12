@@ -21,5 +21,49 @@ for num in num_set:
 shopping_dict = {"eggs": "£1.24", "bread": "£2.00", "milk": "£1.50"}
 # print the price of bread
 print(shopping_dict["bread"])
+# add an item to the dictionary
+shopping_dict["soup"] = "£3.50"
+print(shopping_dict["soup"])
 
+
+write a function that takes two arguments and adds them together
+def add(arg1, arg2):
+    return arg1 + arg2
+print(add(2, 4))
+
+
+# create a class called person with name and age
+class Person:
+    def __init__(self, name, age):
+        self.name = name
+        self.age = age
+
+person_1 = Person("John", 24)
+print(person_1.name)
+print(person_1.age)
+
+# create a class Student that inherits from Person class and has a student id and course
+class Student(Person):
+    def __init__(self, name, age, student_id, course):
+        super().__init__(name, age)
+        self.student_id = student_id
+        self.course = course
+
+student_1 = Student("John", "24", "12454", "DevOps")
+print(student_1.name)
+print(person_1.age)
+print(student_1.student_id)
+print(student_1.course)
+
+# create a dictionary with int values and create a function to return the sum of ia dictionary's values
+some_dict = {
+    "eggs": 1.00,
+    "bread": 2.00,
+    "books": 3.50,
+    "milk": 2.85
+}
+
+def dict_sum(dict):
+    return sum(dict.values())
+print(dict_sum(some_dict))
 
