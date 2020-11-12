@@ -7,11 +7,19 @@ print(num_list)
 # create a tuple with values 1-5
 num_tuple = (1, 2, 3, 4, 5)
 # tuples are immutable, you cannot add or remove items from them
+print(num_tuple[0:3]) # prints first 3 items
 print(type(num_tuple))
 
 # declare a set with values 1-5, and print the values up to 3
 num_set = {1, 2, 3, 4, 5}
+# print(num_set[0:3]) - will not work
 for num in num_set:
     if num <= 3:
         print(num)
+
+# declare a dictionary of a shopping list with 3 items
+shopping_dict = {"eggs": "£1.24", "bread": "£2.00", "milk": "£1.50"}
+# print the price of bread
+print(shopping_dict["bread"])
+
 
